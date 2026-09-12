@@ -7,6 +7,7 @@
 	--accent-color: #af0000;
 	--background-color: black;
 	--foreground-color: white;
+	--footer-color: #999999;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
 	padding: 6px;
 	background-color: var(--background-color);
 	font-family: font1;
+	color: var(--foreground-color);
 }
 .top-menu {
 	position: absolute;
@@ -44,6 +46,7 @@ body {
 	margin: auto;
 	color: var(--foreground-color);
 	font-size: 3vh;
+	white-space: nowrap;
 }
 	
 .top-menu-container {
@@ -78,17 +81,38 @@ body {
 }
 		
 h1 {
-	display: inline;
+	display: block;
 	max-width: 100%;
-	font-size: 10vw;
+	font-size: 7vh;
 	color: var(--foreground-color);
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	margin-left: 0px;
 	margin-right: 0px;
+	text-align: center;
 }
 
-centering {
+p {
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+
+ul {
+	margin: 0px 4vw;
+}
+
+.footer-text {
+	text-align: center;
+	color: var(--footer-color);
+}
+
+.selected {
+	background-color: var(--accent-color);
+}
+
+.centering {
 	display: flex;
 	align-items: center;
 	justify-content: center;
